@@ -23,9 +23,10 @@ class Runner(object):
     def run_square_digits(self, num):
         '''
         Runs the square digits kata
+        :param num: Number to convert to digit squares
         '''
         self.log.info('square digits runner started')
-        sd = SquareDigits(self.log)
+        sd = SquareDigits()
         self.log.info('Running square digits with %s' %num)
         sd.square_digits(num)
 
@@ -36,7 +37,7 @@ class Runner(object):
         :param phrase: Sequence of words to be converted
         '''
         self.log.info('jaden case conversion staretd')
-        jdc = JadenCase(self.log)
+        jdc = JadenCase()
         self.log.info("Running JadenCase conversion with \'%s\'" %phrase)
         jdc.convert_to_jaden_case(phrase)
 

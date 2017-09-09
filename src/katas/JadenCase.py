@@ -11,7 +11,7 @@ class JadenCase(object):
     '''
 
 
-    def __init__(self, log=None):
+    def __init__(self):
         '''
         Constructor
         '''
@@ -21,6 +21,7 @@ class JadenCase(object):
         '''
         This function converts the phrase to CapWords.
         First letter of all words will be converted to JadenCase (CapWords)
+        :param phrase: Phrase to use for conversion
         '''
         self.log.info("Phrase to convert, \'%s\'" %phrase)
         str_list = phrase.split(' ')
