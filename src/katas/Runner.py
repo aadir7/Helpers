@@ -5,6 +5,7 @@ Created on Sep 9, 2017
 '''
 from SquareDigits import SquareDigits
 from JadenCase import JadenCase
+from SubstringArray import SubstringArray
 import logging
 
 class Runner(object):
@@ -41,7 +42,20 @@ class Runner(object):
         self.log.info("Running JadenCase conversion with \'%s\'" %phrase)
         jdc.convert_to_jaden_case(phrase)
 
+    def compare_for_substring_arrays(self, a1, a2):
+        '''
+        a1 and a2 arrays are to be compared to get the result sorted 
+        substring array
+        :param a1:
+        :param a2:
+        '''
+        self.log.info('Substring array comparision started')
+        sba = SubstringArray()
+        sba.findSortedSubstringArray(a1, a2)
+        
 if __name__ == '__main__':
     run = Runner()
     run.run_square_digits(991)
     run.run_jaden_case("jaden's gonna convert me to capcase")
+    run.compare_for_substring_arrays(["livelytest", "strong", "arp"], 
+                    ["lively", "alive", "harp", "sharp", "armstrong"])
