@@ -2,7 +2,7 @@
 All practise programs of code wars
 
 # Python Design Patterns
-## Creational Patterns
+## 5 Creational Patterns
 ### Designed away by language
 
 AbstractFactory
